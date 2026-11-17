@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Món quà bí mật ❤️</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ffe0eb, #fff4f5);
+    font-family: Arial, sans-serif;
+    color: #784b5b;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    width: 100%;
+    max-width: 430px;
+    padding: 30px 22px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 8px 30px #e9aabd66;
+}
+
+.heart {
+    font-size: 48px;
+    animation: beat 1s infinite;
+}
+
+@keyframes beat {
+    50% { transform: scale(1.2); }
+}
+
+h2 {
+    color: #e56b91;
+}
+
+.question {
+    font-size: 17px;
+    line-height: 1.6;
+    margin: 22px 0;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    border: 2px solid #f3bfd0;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+    text-align: center;
+}
+
+button {
+    margin-top: 17px;
+    padding: 13px 25px;
+    background: #ed83a4;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #df648a;
+}
+
+#message {
+    margin-top: 15px;
+    min-height: 22px;
+    color: #e05d82;
+}
+
+#gift {
+    display: none;
+}
+
+#gift img {
+    width: 100%;
+    border-radius: 18px;
+    margin: 15px 0;
+}
+
+.letter {
+    background: #fff0f5;
+    padding: 20px;
+    border-radius: 18px;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.slide {
+    position: absolute;
+    left: 0;
+top: 0;
+width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.slide.active {
+    opacity: 1;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div id="quiz">
+        <div class="heart">💗</div>
+
+        <h2>Một món quà bí mật!</h2>
+
+        <p>
+            Muốn mở món quà này thì bạn phải vượt qua
+            3 thử thách nhỏ nhé! 🥰
+        </p>
+
+        <p id="number">Câu hỏi 1/3</p>
+
+        <div class="question" id="question"></div>
+
+        <input
+            type="text"
+            id="answer"
+            placeholder="Nhập câu trả lời..."
+        >
+
+        <br>
+
+        <button onclick="checkAnswer()">
+            Xác nhận 💌
+        </button>
+
+        <div id="message"></div>
+    </div>
+
+    <div id="gift">
+        <div class="heart">💖</div>
+
+        <h2>Happy Men's Day 19/11!</h2>
+
+        <p>Cuối cùng bạn cũng mở được món quà rồi! 🎉</p>
+
+<div class="slideshow">
+    <img src="hinh-anh/anh1.jpg" class="slide active">
+    <img src="hinh-anh/anh2.jpg" class="slide">
+    <img src="hinh-anh/anh3.jpg" class="slide">
+    <img src="hinh-anh/anh4.jpg" class="slide">
+    <img src="hinh-anh/anh5.jpg" class="slide">
+    <img src="hinh-anh/anh6.jpg" class="slide">
+    <img src="hinh-anh/anh7.jpg" class="slide">
+    <img src="hinh-anh/anh8.jpg" class="slide">
+    <img src="hinh-anh/anh9.jpg" class="slide">
+    <img src="hinh-anh/anh10.jpg" class="slide">
+</div>
+        <div class="letter">
+            <h3>Gửi người đặc biệt của em! 💕</h3>
+
+           <p>
+Chúc anh 19/11 thật vui vẻ nhé! Chúc anh luôn mạnh khỏe, bình an, công việc thuận lợi và gặp được thật nhiều điều tốt đẹp.
+</p>
+
+<p>
+Mong anh lúc nào cũng vui vẻ, yêu đời, luôn giữ được nhiệt huyết với công việc mình đã chọn. Em biết đôi khi công việc cũng có những lúc mệt mỏi và áp lực, nên chỉ mong anh luôn có đủ kiên nhẫn, năng lượng để vượt qua mọi thứ.
+</p>
+
+<p>
+Mong những cố gắng của anh sẽ luôn được đền đáp xứng đáng. Cảm ơn anh vì đã luôn yêu thương và chiều chuộng em.
+</p>
+
+<p>
+Hy vọng những ngày tháng sắp tới, mình vẫn sẽ luôn ở bên nhau, cùng chia sẻ mọi điều trong cuộc sống.
+</p>
+
+<div style="text-align:right; margin-top:20px;">
+    Chúc anh thật nhiều niềm vui, và nhớ là luôn có em thương anh nhé! ❤️
+</div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+let current = 0;
+
+const questions = [
+    "Câu 1: Tìm x biết: 51132 : x = 3",
+    "Câu 2: Tổng của hai số là 98. Biết số thứ nhất lớn hơn số thứ hai 16 đơn vị. Tìm hai số.",
+    "Câu 3: Kỉ niệm ngày yêu của hai bạn là ngày nào?"
+];
+
+const answers = [
+    ["17044"],
+    ["57,41", "57 và 41", "41,57", "41 và 57"],
+    ["19/3/2024", "19/03/2024"]
+];
+
+function normalize(text) {
+    return text.toLowerCase()
+        .trim()
+        .replace(/\s+/g, "")
+        .replace(/,/g, ",");
+}
+
+function showQuestion() {
+    document.getElementById("number").innerText =
+        "Câu hỏi " + (current + 1) + "/3";
+
+    document.getElementById("question").innerText =
+        questions[current];
+
+    document.getElementById("answer").value = "";
+    document.getElementById("message").innerText = "";
+}
+
+function checkAnswer() {
+    let userAnswer = normalize(
+        document.getElementById("answer").value
+    );
+
+    let correct = answers[current].some(
+        answer => normalize(answer) === userAnswer
+    );
+
+    if (correct) {
+        current++;
+
+        if (current === 3) {
+            document.getElementById("quiz").style.display = "none";
+            document.getElementById("gift").style.display = "block";
+document.getElementById("bgMusic").play();
+        } else {
+            document.getElementById("message").innerText =
+                "Chính xác rồi! Giỏi quá ❤️";
+
+            setTimeout(showQuestion, 900);
+        }
+    } else {
+        document.getElementById("message").innerText =
+            "Chưa đúng mất rồi! Thử lại nhé 🥺";
+    }
+}
+
+showQuestion();
+const slides = document.querySelectorAll(".slide");
+let currentSlide = 0;
+
+setInterval(() => {
+    slides[currentSlide].classList.remove("active");
+
+    currentSlide = (currentSlide + 1) % slides.length;
+
+    slides[currentSlide].classList.add("active");
+}, 4000);
+</script>
+<audio id="bgMusic" src="nhac.mp3" loop></audio>
+</body>
+</html>
